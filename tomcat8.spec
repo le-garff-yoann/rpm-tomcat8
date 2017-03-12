@@ -2,11 +2,11 @@
 #
 # sudo yum -y install rpmdevtools && rpmdev-setuptree
 #
-# wget https://raw.github.com/nmilford/rpm-tomcat8/master/tomcat8.spec -O ~/rpmbuild/SPECS/tomcat8.spec
-# wget https://raw.github.com/nmilford/rpm-tomcat8/master/tomcat8.init -O ~/rpmbuild/SOURCES/tomcat8.init
-# wget https://raw.github.com/nmilford/rpm-tomcat8/master/tomcat8.sysconfig -O ~/rpmbuild/SOURCES/tomcat8.sysconfig
-# wget https://raw.github.com/nmilford/rpm-tomcat8/master/tomcat8.logrotate -O ~/rpmbuild/SOURCES/tomcat8.logrotate
-# wget http://www.motorlogy.com/apache/tomcat/tomcat-8/v8.0.23/bin/apache-tomcat-8.0.23.tar.gz -O ~/rpmbuild/SOURCES/apache-tomcat-8.0.23.tar.gz
+# wget https://raw.github.com/spions/rpm-tomcat8/master/tomcat8.spec -O ~/rpmbuild/SPECS/tomcat8.spec
+# wget https://raw.github.com/spions/rpm-tomcat8/master/tomcat8.init -O ~/rpmbuild/SOURCES/tomcat8.init
+# wget https://raw.github.com/spions/rpm-tomcat8/master/tomcat8.sysconfig -O ~/rpmbuild/SOURCES/tomcat8.sysconfig
+# wget https://raw.github.com/spions/rpm-tomcat8/master/tomcat8.logrotate -O ~/rpmbuild/SOURCES/tomcat8.logrotate
+# wget http://apache-mirror.rbc.ru/pub/apache/tomcat/tomcat-8/v8.0.41/bin/apache-tomcat-8.0.41.tar.gz -O ~/rpmbuild/SOURCES/apache-tomcat-8.0.41.tar.gz
 # rpmbuild -bb ~/rpmbuild/SPECS/tomcat8.spec
 
 %define __jar_repack %{nil}
@@ -16,7 +16,7 @@
 
 Summary:    Apache Servlet/JSP Engine, RI for Servlet 2.4/JSP 2.0 API
 Name:       tomcat8
-Version:    8.0.23
+Version:    8.0.41
 BuildArch:  noarch
 Release:    1
 License:    Apache Software License
