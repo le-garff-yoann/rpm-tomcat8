@@ -6,7 +6,7 @@
 # wget https://raw.github.com/spions/rpm-tomcat8/master/tomcat8.init -O ~/rpmbuild/SOURCES/tomcat8.init
 # wget https://raw.github.com/spions/rpm-tomcat8/master/tomcat8.sysconfig -O ~/rpmbuild/SOURCES/tomcat8.sysconfig
 # wget https://raw.github.com/spions/rpm-tomcat8/master/tomcat8.logrotate -O ~/rpmbuild/SOURCES/tomcat8.logrotate
-# wget http://apache-mirror.rbc.ru/pub/apache/tomcat/tomcat-8/v8.0.41/bin/apache-tomcat-8.0.41.tar.gz -O ~/rpmbuild/SOURCES/apache-tomcat-8.0.41.tar.gz
+# wget http://apache-mirror.rbc.ru/pub/apache/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz -O ~/rpmbuild/SOURCES/apache-tomcat-8.5.39.tar.gz
 # rpmbuild -bb ~/rpmbuild/SPECS/tomcat8.spec
 
 %define __jar_repack %{nil}
@@ -16,7 +16,7 @@
 
 Summary:    Apache Servlet/JSP Engine, RI for Servlet 2.4/JSP 2.0 API
 Name:       tomcat8
-Version:    8.0.41
+Version:    8.5.39
 BuildArch:  noarch
 Release:    1
 License:    Apache Software License
@@ -111,6 +111,8 @@ if [ $1 -ge 1 ]; then
 fi
 
 %changelog
+* Wed Apr 5 2018 Yoann Le Garff <pe.weeble@yahoo.fr>
+- 8.5.39
 * Fri Jun 5 2015 Wayne Carty <wayne.carty@risk.lexisnexis.com>
 - 8.0.23 
 * Thu Sep 4 2014 Edward Bartholomew <edward@bartholomew>
