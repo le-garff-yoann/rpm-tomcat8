@@ -14,7 +14,7 @@ sudo yum -y install rpmdevtools && rpmdev-setuptree
 \cp tomcat8.sysconfig ~/rpmbuild/SOURCES/tomcat8.sysconfig
 \cp tomcat8.logrotate ~/rpmbuild/SOURCES/tomcat8.logrotate
 
-wget http://apache-mirror.rbc.ru/pub/apache/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz -O ~/rpmbuild/SOURCES/apache-tomcat-8.5.39.tar.gz
+wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.39/bin/apache-tomcat-8.5.39.tar.gz -O ~/rpmbuild/SOURCES/apache-tomcat-8.5.39.tar.gz
 
 rpmbuild -bb ~/rpmbuild/SPECS/tomcat8.spec # ~/rpmbuild/RPMS/noarch/tomcat8-8.5.39-1.noarch.rpm
 ```
